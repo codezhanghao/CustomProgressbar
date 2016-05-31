@@ -1,0 +1,13 @@
+<manifest package="com.hebut.czh"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        >
+
+    </application>
+
+</manifest>
