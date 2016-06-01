@@ -17,7 +17,6 @@ import com.hebut.czh.util.LocalDisplay;
 public class HorizontalProgressBar extends ProgressBar
 {
     /**
-     * 自定义属性提供默认值
      */
     private static final int DEFAULT_TEXT_SIZE = 10; //sp
     private static final int DEFAULT_TEXT_COLOR = 0xfffc00d1;
@@ -55,7 +54,6 @@ public class HorizontalProgressBar extends ProgressBar
 
         LocalDisplay.init(context);
 
-        //获取自动以属性
         TypedArray ta = context.obtainStyledAttributes(attrs,
                 R.styleable.HorizontalProgressBar);
         mTextSize = (int) ta.getDimension(R.styleable.HorizontalProgressBar_progress_text_size,
@@ -81,7 +79,6 @@ public class HorizontalProgressBar extends ProgressBar
     @Override
     protected synchronized void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
-        //宽度不支持wrap_cotent,用户必须给出一个明确值
         int withSize = MeasureSpec.getSize(widthMeasureSpec);
 
         int heightSize = measureHeight(heightMeasureSpec);
@@ -104,7 +101,6 @@ public class HorizontalProgressBar extends ProgressBar
             result = getPaddingTop() + getPaddingBottom() +
                     Math.max(Math.max(mReachHeight, mUnreachHeight), Math.abs(textHeight));
 
-            //不能超过父控件的高度
             if(mode == MeasureSpec.AT_MOST) {
                 result = Math.min(result, size);
             }
@@ -116,7 +112,6 @@ public class HorizontalProgressBar extends ProgressBar
     protected synchronized void onDraw(Canvas canvas)
     {
         canvas.save();
-        //移动canva的坐标，方便下面绘制
         canvas.translate(getPaddingLeft(), getHeight() / 2);
 
         //draw reached

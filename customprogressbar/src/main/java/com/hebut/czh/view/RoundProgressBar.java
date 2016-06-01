@@ -18,7 +18,6 @@ import com.hebut.czh.util.LocalDisplay;
 public class RoundProgressBar extends ProgressBar
 {
     /**
-     * 为自定义属性提供默认值
      */
     private static final int DEFAULT_TEXT_SIZE = 10; //sp
     private static final int DEFAULT_TEXT_COLOR = 0xfffc00d1;
@@ -87,11 +86,9 @@ public class RoundProgressBar extends ProgressBar
 
         int expectSize = mRadius * 2 + mMaxPaintWidth + getPaddingLeft() + getPaddingRight();
 
-        //系统提供测量的模板代码
         int width = resolveSize(expectSize, widthMeasureSpec);
         int height = resolveSize(expectSize, heightMeasureSpec);
 
-        //当用户把宽度和高度设置成不一样的值
         int realWidth = Math.min(width, height);
 
         mRadius = (realWidth - getPaddingLeft() - getPaddingRight() - mMaxPaintWidth) / 2;

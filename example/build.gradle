@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile 'com.hebut.czh:customProgressBar:0.0.1-SNAPSHOT'
+    compile 'com.hebut.czh:customprogressbar:0.0.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'

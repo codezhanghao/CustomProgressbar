@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
+
 
 android {
     compileSdkVersion 23
@@ -25,15 +25,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
 }
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: "http://localhost:8081/nexus/content/repositories/releases/") {
-                authentication(userName: "deployment", password: "deployment123")
-            }
-            pom.groupId = 'com.hebut.czh'
-            pom.version = '0.0.1'
-            pom.artifactId = 'customProgressBar'
-        }
-    }
-}
+apply from: './nexus-push.gradle'
