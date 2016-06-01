@@ -1,5 +1,7 @@
 ##### Welcome to visit:
+
 GitHub: https://github.com/codezhanghao/
+
 Blog: www.codezhang.com
 
 ---
@@ -21,33 +23,25 @@ Blog: www.codezhang.com
 
 ### 水平进度条：HorizontalProgressBar
 
-* progress_unreach_color
-  未到达进度条颜色
+* progress_unreach_color  未到达进度条颜色
 
-* progress_reach_color
-  已到达进度条颜色
+* progress_reach_color  已到达进度条颜色
 
-* progress_unreach_height
-  未到达进度条高度，单位dp
+* progress_unreach_height  未到达进度条高度，单位dp
 
-* progress_reach_height
-  已到达进度条高度，单位dp
+* progress_reach_height  已到达进度条高度，单位dp
 
-* progress_text_color
-  文本颜色
+* progress_text_color  文本颜色
 
-* progress_text_size
-  文本大小，单位sp
+* progress_text_size  文本大小，单位sp
 
-* progress_text_bar_space
-  文本与进度条之间的间隔
+* progress_text_bar_space  文本与进度条之间的间隔
 
 ### 圆形进度条：RoundProgressBar
 
 与水平进度条基本一致，就多出一个属性：
 
-* progress_radius
-  半径，单位dp
+* progress_radius  半径，单位dp
 
 # Usage
 
