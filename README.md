@@ -19,7 +19,7 @@ Blog: www.codezhang.com
 
 ---
 
-# 自定义属性
+# Config
 
 ### 水平进度条：HorizontalProgressBar
 
@@ -42,8 +42,6 @@ Blog: www.codezhang.com
 与水平进度条基本一致，就多出一个属性：
 
 * progress_radius  半径，单位dp
-
-# Usage
 
 activity_main.xml
 
@@ -113,4 +111,25 @@ public class MainActivity extends AppCompatActivity
         }
     }
 }
+```
+
+# Usage
+
+### JCenter
+
+这个项目已经以aar的形式发布到JCenter仓库中
+
+* Gradle
+```
+compile 'com.hebut.czh:customprogressbar:0.0.1'
+```
+
+* Maven
+```xml
+<dependency>
+    <groupId>com.hebut.czh</groupId>
+    <artifactId>customprogressbar</artifactId>
+    <type>aar</type>
+    <version>0.0.1</version>
+</dependency>
 ```
